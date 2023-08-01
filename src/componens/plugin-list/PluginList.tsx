@@ -36,7 +36,6 @@ export default function PluginList({
   });
 
   const handleChange = (isActive: boolean, id: string) => {
-    console.log(isActive, id, 0);
     const { active, disabled } = getChangesPlugins(isActive, id, data, search);
     mutate({
       ...data,
