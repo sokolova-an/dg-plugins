@@ -1,5 +1,5 @@
 //http://localhost:5000/data
-const URL = "https://dg-data-sokolova-an.vercel.app/data";
+const URL = "https://dull-teal-skunk-tam.cyclic.cloud/api/data";
 
 export async function getData() {
   const res = await fetch(URL);
@@ -8,9 +8,8 @@ export async function getData() {
     throw new Error("Failed to fetch data");
   }
 
-  return res.json();
+  return await res.json();
 }
-
 export async function changeData(body: any) {
   const res = await fetch(URL, {
     method: "PUT",
