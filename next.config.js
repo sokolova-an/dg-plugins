@@ -1,4 +1,23 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+const path = require("path");
 
-module.exports = nextConfig
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+
+  sassOptions: {
+    includePaths: [path.join(__dirname, "styles")],
+  },
+  async redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/marketing",
+        permanent: true,
+      },
+    ];
+  },
+  experimental: {
+    serverActions: true,
+  },
+};
+
+module.exports = nextConfig;
