@@ -1,3 +1,6 @@
+prod - https://dg-plugins.vercel.app/marketing
+
+backend repo - https://github.com/sokolova-an/dg-data/tree/main
 
 ## Getting Started
 
