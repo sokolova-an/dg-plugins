@@ -1,4 +1,5 @@
-const URL = "http://localhost:5000/data";
+//http://localhost:5000/data
+const URL = "https://dg-data-sokolova-an.vercel.app/data";
 
 export async function getData() {
   const res = await fetch(URL);
