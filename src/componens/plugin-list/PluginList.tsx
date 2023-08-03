@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { getPluginsData } from "@/helpers/parseData";
 import { ResponseType } from "@/helpers/types";
-import { getChangesPlugins } from "@/helpers/parseData";
+import { getChangedPlugins } from "@/helpers/parseData";
 import { changeData } from "@/helpers/api";
 import PluginCard from "../plugin-card/PluginCard";
 
@@ -36,7 +36,7 @@ export default function PluginList({
   });
 
   const handleChange = (isActive: boolean, id: string) => {
-    const { active, disabled } = getChangesPlugins(isActive, id, data, search);
+    const { active, disabled } = getChangedPlugins(isActive, id, data, search);
     mutate({
       ...data,
       tabdata: {

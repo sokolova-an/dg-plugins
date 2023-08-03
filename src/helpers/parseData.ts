@@ -28,7 +28,7 @@ export const getPluginsData = (
   return allPlugins;
 };
 
-export const getChangesPlugins = (
+export const getChangedPlugins = (
   isActive: boolean,
   id: string,
   data: ResponseType,

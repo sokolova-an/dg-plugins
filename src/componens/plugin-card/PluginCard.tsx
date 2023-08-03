@@ -36,6 +36,7 @@ export default function PluginCard({
       className={
         plugin.inactive || !(isAllActive ?? true) ? styles.inactive : ""
       }
+      id="plugin-card"
     >
       <CardHeader mb="-15px">
         <SimpleGrid columns={2} spacing={5}>
