@@ -1,5 +1,5 @@
 //http://localhost:5000/data
-const URL = "https://dull-teal-skunk-tam.cyclic.cloud/api/data";
+const URL = "https://dg-data-sokolova-an.vercel.app/api/data";
 
 export async function getData() {
   const res = await fetch(URL);
