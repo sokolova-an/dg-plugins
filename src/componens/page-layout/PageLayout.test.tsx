@@ -12,6 +12,7 @@ export function useCustomHook() {
 const createWrapper = () => {
   // ✅ creates a new QueryClient for each test
   const queryClient = new QueryClient();
+  // eslint-disable-next-line react/display-name
   return ({ children }: any) => (
     <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
   );
